@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="140dp">
+
+    <TextView
+        android:textColor="@color/gray"
+        android:id="@+id/txt_subject_city"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="12dp"
+        android:text="Asian Sushi"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/item_img_main"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageView
+        android:layout_marginStart="18dp"
+        android:id="@+id/item_img_main"
+        android:layout_width="106dp"
+        android:layout_height="110dp"
+        android:textColor="@color/gray"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/food1" />
+
+    <TextView
+        android:textColor="@color/gray"
+        android:id="@+id/item_txt_distance"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="1.2 Miles Away From You"
+        app:layout_constraintStart_toStartOf="@+id/txt_subject_city"
+        app:layout_constraintTop_toBottomOf="@+id/txt_price_food" />
+
+    <TextView
+        android:textColor="@color/gray"
+        android:id="@+id/txt_price_food"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="$12 Vip"
+        app:layout_constraintStart_toStartOf="@+id/txt_subject_city"
+        app:layout_constraintTop_toBottomOf="@+id/txt_subject_city" />
+
+    <TextView
+        android:id="@+id/txt_food_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="12dp"
+        android:text="Fusha Asian"
+        android:fontFamily="@font/primary_bold"
+        android:textSize="16sp"
+        app:layout_constraintBottom_toTopOf="@+id/txt_subject_city"
+        app:layout_constraintStart_toEndOf="@+id/item_img_main"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.739" />
+
+    <RatingBar
+
+        android:id="@+id/item_rating_main"
+        style="@style/Widget.AppCompat.RatingBar.Small"
+        android:layout_width="111dp"
+        android:layout_height="21dp"
+        android:layout_marginEnd="4dp"
+        android:progressTint="@color/yellow"
+        android:rating="2"
+        android:tint="@color/yellow"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.391" />
+
+    <TextView
+        android:id="@+id/item_txt_rating"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="90 Ratings"
+        android:textColor="@color/gray"
+        app:layout_constraintEnd_toEndOf="@+id/item_rating_main"
+        app:layout_constraintHorizontal_bias="0.478"
+        app:layout_constraintStart_toStartOf="@+id/item_rating_main"
+        app:layout_constraintTop_toBottomOf="@+id/item_rating_main" />
+</androidx.constraintlayout.widget.ConstraintLayout>
